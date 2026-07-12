@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: https://charts.jenkins.io
-    targetRevision: 5.1.4
+    targetRevision: 5.9.32
     chart: jenkins
     helm:
       valuesObject:
