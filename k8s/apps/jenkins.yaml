@@ -17,6 +17,17 @@ spec:
           nodeSelector:
             dedicated: jenkins
           serviceType: LoadBalancer
+
+          resources:
+            requests:
+              cpu: 500m
+              memory: 1Gi
+            limits:
+              cpu: 1
+              memory: 2Gi
+
+          javaOpts: "-Xms512m -Xmx1g -XX:+UseG1GC"
+
           JCasC:
             defaultConfig: true
             configScripts:

@@ -15,6 +15,16 @@ spec:
       valuesObject:
         replicas: 1
         minimumMasterNodes: 1
+
+        esJavaOpts: "-Xms512m -Xmx512m"
+        resources:
+          requests:
+            cpu: 500m
+            memory: 1Gi
+          limits:
+            cpu: 1
+            memory: 2Gi
+
         ingress:
           enabled: true
           className: nginx
